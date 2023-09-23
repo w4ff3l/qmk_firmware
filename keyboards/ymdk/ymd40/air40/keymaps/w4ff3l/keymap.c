@@ -50,8 +50,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Tap for '[' and ']' ----'-----------------------------------------------------'
      */
     [_BASE_COLEMAK_DH] = LAYOUT_ortho_4x12_1x2uC(
-        KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,  KC_B,   KC_J, KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
-        CTL_ESC, KC_A,    KC_R,    KC_S,    KC_T,  KC_G,   KC_M, KC_N,  KC_E,    KC_I,    KC_O,    CTL_ENT,
+        CTL_ESC, KC_Q,    KC_W,    KC_F,    KC_P,  KC_B,   KC_J, KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
+        KC_TAB,  KC_A,    KC_R,    KC_S,    KC_T,  KC_G,   KC_M, KC_N,  KC_E,    KC_I,    KC_O,    CTL_ENT,
         SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_D,  KC_V,   KC_K, KC_H,  KC_COMM, KC_DOT,  KC_SLSH, SC_RSPC,
         KC_LCBR, HYPER_L, LALT_LT, KC_LGUI, LOWER,    KC_SPC,    RAISE, KC_RGUI, RALT_GT, HYPER_R, KC_RCBR
         ),
@@ -129,10 +129,10 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     rgb_matrix_sethsv(0, 255, 200);
     switch (get_highest_layer(state)) {
         case _LOWER:
-            rgb_matrix_mode(RGB_MATRIX_CUSTOM_right_column_glow);
+            rgb_matrix_mode(RGB_MATRIX_CUSTOM_left_column_glow);
             break;
         case _RAISE:
-            rgb_matrix_mode(RGB_MATRIX_CUSTOM_left_column_glow);
+            rgb_matrix_mode(RGB_MATRIX_CUSTOM_right_column_glow);
             break;
         case _SPEC:
             rgb_matrix_mode(RGB_MATRIX_CUSTOM_top_row_glow);
