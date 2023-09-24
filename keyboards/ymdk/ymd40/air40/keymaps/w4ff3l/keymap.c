@@ -38,9 +38,9 @@ void update_layer_state(bool pressed, enum layer_name layer);
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base layer (Colemak-DH)
      *                  ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-     *                  | tab │  Q  │  W  │  F  │  P  │  B  │  J  │  L  │  U  │  Y  │  ;  │  '  │
+     * Tap for 'Esc' -- | esc │  Q  │  W  │  F  │  P  │  B  │  J  │  L  │  U  │  Y  │  ;  │  '  │
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-     * Tap for 'Esc' -- │ esc │  A  │  R  │  S  │  T  │  G  │  M  │  N  │  E  │  I  │  O  │ ent │
+     *                  │ tab │  A  │  R  │  S  │  T  │  G  │  M  │  N  │  E  │  I  │  O  │ ent │
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
      * Tap for  '('  -- │  ⇧  │  Z  │  X  │  C  │  D  │  V  │  K  │  H  │  ,  │  .  │  /  │  ⇧  │ -- Tap for ')'
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────┼─────┤
@@ -50,24 +50,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Tap for '[' and ']' ----'-----------------------------------------------------'
      */
     [_BASE_COLEMAK_DH] = LAYOUT_ortho_4x12_1x2uC(
-        CTL_ESC, KC_Q,    KC_W,    KC_F,    KC_P,  KC_B,   KC_J, KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
-        KC_TAB,  KC_A,    KC_R,    KC_S,    KC_T,  KC_G,   KC_M, KC_N,  KC_E,    KC_I,    KC_O,    CTL_ENT,
+        KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,  KC_B,   KC_J, KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
+        CTL_TAB, KC_A,    KC_R,    KC_S,    KC_T,  KC_G,   KC_M, KC_N,  KC_E,    KC_I,    KC_O,    CTL_ENT,
         SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_D,  KC_V,   KC_K, KC_H,  KC_COMM, KC_DOT,  KC_SLSH, SC_RSPC,
         KC_LCBR, HYPER_L, LALT_LT, KC_LGUI, LOWER,    KC_SPC,    RAISE, KC_RGUI, RALT_GT, HYPER_R, KC_RCBR
         ),
 
     /* Number layer
      *                  ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-     *                  | tab │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │  '  │
+     *                  |     │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │     │
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-     * Tap for 'Esc' -- │ esc │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │ ent │
+     *                  │     │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │     │
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-     * Tap for  '('  -- │  ⇧  │  -  │  =  │  `  │  \  │  :  │ nda │ mda │  ,  │  .  │  /  │  ⇧  │ -- Tap for ')'
+     *                  │     │  -  │  =  │  `  │  \  │  :  │ nda │ mda │  ,  │  .  │  /  │     │
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────┼─────┤
-     *                  │  {  │ Hyp │ Alt │ GUI │  ↓  │ Backspace │  ↑  │ GUI │ Alt │ Hyp │  }  │
+     *                  │     │     │     │     │  ↓  │ Backspace │  ↑  │     │     │     │     │
      *                  └─────┴─────┴─────┴─────┴─────┴───────────┴─────┴─────┴─────┴─────┴─────┘
-     *                          /                                                     /
-     * Tap for '[' and ']' ----'-----------------------------------------------------'
      */
     [_LOWER] = LAYOUT_ortho_4x12_1x2uC(
         _______, KC_F1,   KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
@@ -78,16 +76,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Symbol layer
      *                  ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-     *                  | tab │ F11 │ F12 │ F13 │ F14 │ F15 │ F16 │ F17 │ F18 │ F19 │ F20 │  '  │
+     *                  |     │ F11 │ F12 │ F13 │ F14 │ F15 │ F16 │ F17 │ F18 │ F19 │ F20 │     │
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-     * Tap for 'Esc' -- │ esc │  !  │  @  │  #  │  $  │  %  │  ^  │  &  │  *  │  '  │  "  │ ent │
+     *                  │     │  !  │  @  │  #  │  $  │  %  │  ^  │  &  │  *  │  '  │  "  │     │
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-     * Tap for  '('  -- │  ⇧  │  _  │  +  │  ~  │  |  │  :  │ nda │ mda │  ,  │  .  │  /  │  ⇧  │ -- Tap for ')'
+     *                  │     │  _  │  +  │  ~  │  |  │  :  │ nda │ mda │  ,  │  .  │  /  │     │
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────┼─────┤
-     *                  │  {  │ Hyp │ Alt │ GUI │  ↓  │   Delete  │  ↑  │ GUI │ Alt │ Hyp │  }  │
+     *                  │     │     │     │     │  ↓  │   Delete  │  ↑  │     │     │     │     │
      *                  └─────┴─────┴─────┴─────┴─────┴───────────┴─────┴─────┴─────┴─────┴─────┘
-     *                          /                                                     /
-     * Tap for '[' and ']' ----'-----------------------------------------------------'
      */
     [_RAISE] = LAYOUT_ortho_4x12_1x2uC(
         _______, KC_F11,  KC_F12,  KC_F13,  KC_F14,    KC_F15,  KC_F16,  KC_F17,  KC_F18,  KC_F19,  KC_F20,  _______,

@@ -21,7 +21,7 @@
 #endif // QMK_FIRMWARE_KEYMAP_H
 
 // Modifiers
-#define CTL_ESC CTL_T(KC_ESC)
+#define CTL_TAB CTL_T(KC_TAB)
 #define CTL_ENT CTL_T(KC_ENT)
 
 #define HYPER_L ALL_T(KC_LBRC)
