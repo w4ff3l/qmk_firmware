@@ -95,7 +95,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Special layer */
     [_SPEC] = LAYOUT_ortho_4x12_1x2uC(
         _______, QK_BOOT, DB_TOGG, RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI,  RGB_VAD, KC_DEL,
-        _______, _______, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT, _______,
+        _______, KC_HOME, KC_PGDN, KC_PGUP,  KC_END, _______, _______, KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______,
         _______, _______, _______, _______, _______,      _______,     _______, _______, _______,  _______, _______
         )
