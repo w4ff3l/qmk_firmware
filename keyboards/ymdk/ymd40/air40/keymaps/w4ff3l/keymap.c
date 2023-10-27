@@ -19,9 +19,7 @@
 #include "keymap.h"
 
 enum custom_keycodes {
-    LALT_LT = SAFE_RANGE,
-    RALT_GT,
-    RAISE,
+    RAISE = SAFE_RANGE,
     LOWER
 };
 
@@ -53,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,  KC_B,   KC_J, KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
         CTL_TAB, KC_A,    KC_R,    KC_S,    KC_T,  KC_G,   KC_M, KC_N,  KC_E,    KC_I,    KC_O,    CTL_ENT,
         SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_D,  KC_V,   KC_K, KC_H,  KC_COMM, KC_DOT,  KC_SLSH, SC_RSPC,
-        KC_LCBR, HYPER_L, LALT_LT, KC_LGUI, LOWER,    KC_SPC,    RAISE, KC_RGUI, RALT_GT, HYPER_R, KC_RCBR
+        KC_LCBR, HYPER_L, KC_RALT, KC_LGUI, LOWER,    KC_SPC,    RAISE, KC_RGUI, KC_RALT, HYPER_R, KC_RCBR
         ),
 
     /* Number layer
@@ -103,12 +101,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case LALT_LT:
-            custom_mod_t(record->event.pressed, KC_LALT, '<');
-            return false;
-        case RALT_GT:
-            custom_mod_t(record->event.pressed, KC_RALT, '>');
-            return false;
         case LOWER:
             update_layer_state(record->event.pressed, _LOWER);
             return false;
