@@ -27,6 +27,9 @@
 #define HYPER_L ALL_T(KC_LBRC)
 #define HYPER_R ALL_T(KC_RBRC)
 
+#define RALT__G RALT_T(KC_G)
+#define RALT__M RALT_T(KC_M)
+
 // Dashed
 #define KC_NDSH LALT(KC_MINS)
 #define KC_MDSH S(LALT(KC_MINS))
