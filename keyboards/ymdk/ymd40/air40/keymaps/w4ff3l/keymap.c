@@ -33,6 +33,7 @@ enum layer_name {
 void custom_mod_t(bool pressed, uint16_t key, char key_tap);
 void update_layer_state(bool pressed, enum layer_name layer);
 
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base layer (Colemak-DH)
      *                  ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
@@ -48,10 +49,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Tap for '[' and ']' ----'-----------------------------------------------------'
      */
     [_BASE_COLEMAK_DH] = LAYOUT_ortho_4x12_1x2uC(
-        KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,  KC_B,    KC_J,    KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
-        CTL_TAB, KC_A,    KC_R,    KC_S,    KC_T,  RALT__G, RALT__M, KC_N,  KC_E,    KC_I,    KC_O,    CTL_ENT,
-        SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_D,  KC_V,    KC_K,    KC_H,  KC_COMM, KC_DOT,  KC_SLSH, SC_RSPC,
-        KC_LCBR, HYPER_L, KC_LALT, KC_LGUI, LOWER,      KC_SPC,      RAISE, KC_RGUI, KC_RALT, HYPER_R, KC_RCBR
+        KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
+        CTL_TAB, LGUI__A, LALT__R, LSFT__S, LCTL__T, RALT__G, RALT__M, RCTL__N, RSFT__E, RALT__I, RGUI__O,  CTL_ENT,
+        SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, SC_RSPC,
+        KC_LCBR, HYPER_L, KC_LALT, KC_LGUI, LOWER,       KC_SPC,       RAISE,   KC_RGUI, KC_RALT, HYPER_R, KC_RCBR
         ),
 
     /* Number layer

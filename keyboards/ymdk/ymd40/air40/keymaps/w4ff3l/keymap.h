@@ -30,6 +30,18 @@
 #define RALT__G RALT_T(KC_G)
 #define RALT__M RALT_T(KC_M)
 
+#define LCTL__T LCTL_T(KC_T)
+#define RCTL__N RCTL_T(KC_N)
+
+#define LSFT__S RSFT_T(KC_S)
+#define RSFT__E RSFT_T(KC_E)
+
+#define LALT__R LALT_T(KC_R)
+#define RALT__I RALT_T(KC_I)
+
+#define LGUI__A LGUI_T(KC_A)
+#define RGUI__O LGUI_T(KC_O)
+
 // Dashed
 #define KC_NDSH LALT(KC_MINS)
 #define KC_MDSH S(LALT(KC_MINS))
