@@ -18,8 +18,6 @@
 #ifndef QMK_FIRMWARE_KEYMAP_H
 #define QMK_FIRMWARE_KEYMAP_H
 
-#endif // QMK_FIRMWARE_KEYMAP_H
-
 // Modifiers
 #define CTL_TAB CTL_T(KC_TAB)
 #define CTL_ENT CTL_T(KC_ENT)
@@ -45,3 +43,14 @@
 // Dashed
 #define KC_NDSH LALT(KC_MINS)
 #define KC_MDSH S(LALT(KC_MINS))
+
+// Options
+#define USB_SUSPEND_WAKEUP_DELAY 0
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
+#undef TAPPING_TERM
+#define TAPPING_TERM 240
+#define RETRO_TAPPING
+
+#endif // QMK_FIRMWARE_KEYMAP_H
+
