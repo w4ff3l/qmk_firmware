@@ -33,7 +33,7 @@
 #define LCTL__T LCTL_T(KC_T)
 #define RCTL__N RCTL_T(KC_N)
 
-#define LSFT__S RSFT_T(KC_S)
+#define LSFT__S LSFT_T(KC_S)
 #define RSFT__E RSFT_T(KC_E)
 
 #define LALT__R LALT_T(KC_R)
