@@ -25,6 +25,8 @@
 #define HYPER_L ALL_T(KC_LBRC)
 #define HYPER_R ALL_T(KC_RBRC)
 
+// Homerow mods
+// Layer 1
 #define RALT__G RALT_T(KC_G)
 #define RALT__M RALT_T(KC_M)
 
@@ -39,6 +41,39 @@
 
 #define LGUI__A LGUI_T(KC_A)
 #define RGUI__O LGUI_T(KC_O)
+
+// Layer 2
+#define RALT__5 RALT_T(KC_5)
+#define RALT__6 RALT_T(KC_6)
+
+#define LCTL__4 LCTL_T(KC_4)
+#define RCTL__7 RCTL_T(KC_7)
+
+#define LSFT__3 RSFT_T(KC_3)
+#define RSFT__8 RSFT_T(KC_8)
+
+#define LALT__2 LALT_T(KC_2)
+#define RALT__9 RALT_T(KC_9)
+
+#define LGUI__1 LGUI_T(KC_1)
+#define RGUI__0 LGUI_T(KC_0)
+
+// Layer 3
+// _______, KC_EXLM, KC_AT,   KC_HASH, KC_DOLLAR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_QUOT, KC_DQUO, _______,
+#define RALT_PE RALT_T(KC_PERC)
+#define RALT_CI RALT_T(KC_CIRC)
+
+#define LCTL_DO LCTL_T(KC_DOLLAR)
+#define RCTL_AM RCTL_T(KC_AMPR)
+
+#define LSFT_HA RSFT_T(KC_HASH)
+#define RSFT_AS RSFT_T(KC_ASTR)
+
+#define LALT_AT LALT_T(KC_AT)
+#define RALT_QU RALT_T(KC_QUOT)
+
+#define LGUI_EX LGUI_T(KC_EXLM)
+#define RGUI_DQ LGUI_T(KC_DQUO)
 
 // Dashed
 #define KC_NDSH LALT(KC_MINS)

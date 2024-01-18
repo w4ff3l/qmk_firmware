@@ -67,10 +67,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                  └─────┴─────┴─────┴─────┴─────┴───────────┴─────┴─────┴─────┴─────┴─────┘
      */
     [_LOWER] = LAYOUT_ortho_4x12_1x2uC(
-        _______, KC_F1,   KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
-        _______, KC_1,    KC_2,     KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-        _______, KC_MINS, KC_EQUAL, KC_GRV,  KC_BSLS, KC_COLN, KC_NDSH, KC_MDSH, KC_COMM, KC_DOT,  KC_SLSH, _______,
-        _______, _______, _______,  _______, _______,      KC_BSPC,     _______, _______, _______, _______, _______
+        _______, KC_F1,   KC_F2,    KC_F3,  KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
+        _______, LGUI__1, LALT__2, LSFT__3, LCTL__4, RALT__5, RALT__6, RCTL__7, RSFT__8, RALT__9, RGUI__0, _______,
+        _______, KC_MINS, KC_EQUAL, KC_GRV, KC_BSLS, KC_COLN, KC_NDSH, KC_MDSH, KC_COMM, KC_DOT,  KC_SLSH, _______,
+        _______, _______, _______,  _______, _______,     KC_BSPC,     _______, _______, _______, _______, _______
         ),
 
     /* Symbol layer
@@ -85,10 +85,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                  └─────┴─────┴─────┴─────┴─────┴───────────┴─────┴─────┴─────┴─────┴─────┘
      */
     [_RAISE] = LAYOUT_ortho_4x12_1x2uC(
-        _______, KC_F11,  KC_F12,  KC_F13,  KC_F14,    KC_F15,  KC_F16,  KC_F17,  KC_F18,  KC_F19,  KC_F20,  _______,
-        _______, KC_EXLM, KC_AT,   KC_HASH, KC_DOLLAR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_QUOT, KC_DQUO, _______,
-        _______, KC_UNDS, KC_PLUS, KC_TILD, KC_PIPE,   KC_COLN, KC_NDSH, KC_MDSH, KC_COMM, KC_DOT,  KC_SLSH, _______,
-        _______, _______, _______, _______, _______,       KC_DELETE,    _______, _______, _______, _______, _______
+        _______, KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15,  KC_F16,  KC_F17,  KC_F18,  KC_F19,  KC_F20,  _______,
+        _______, LGUI_EX, LALT_AT, LSFT_HA, LCTL_DO, RALT_PE, RALT_CI, RCTL_AM, RSFT_AS, RALT_QU, RGUI_DQ, _______,
+        _______, KC_UNDS, KC_PLUS, KC_TILD, KC_PIPE, KC_COLN, KC_NDSH, KC_MDSH, KC_COMM, KC_DOT,  KC_SLSH, _______,
+        _______, _______, _______, _______, _______,     KC_DELETE,    _______, _______, _______, _______, _______
         ),
 
     /* Special layer */
