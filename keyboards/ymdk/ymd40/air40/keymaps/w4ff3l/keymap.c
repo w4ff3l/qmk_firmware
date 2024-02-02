@@ -43,16 +43,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
      * Tap for  '('  -- │  ⇧  │  Z  │  X  │  C  │  D  │  V  │  K  │  H  │  ,  │  .  │  /  │  ⇧  │ -- Tap for ')'
      *                  ├─────┼─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────┼─────┤
-     *                  │  {  │ Hyp │ Alt │ GUI │  ↓  │   Space   │  ↑  │ GUI │ Alt │ Hyp │  }  │
+     *                  │  [  │ Hyp │ Alt │ GUI │  ↓  │   Space   │  ↑  │ GUI │ Alt │ Hyp │  ]  │
      *                  └─────┴─────┴─────┴─────┴─────┴───────────┴─────┴─────┴─────┴─────┴─────┘
      *                          /                                                     /
-     * Tap for '[' and ']' ----'-----------------------------------------------------'
+     * Tap for '{' and '}' ----'-----------------------------------------------------'
      */
     [_BASE_COLEMAK_DH] = LAYOUT_ortho_4x12_1x2uC(
         KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
-        CTL_TAB, LGUI__A, LALT__R, LSFT__S, LCTL__T, RALT__G, RALT__M, RCTL__N, RSFT__E, RALT__I, RGUI__O,  CTL_ENT,
+        CTL_TAB, LGUI__A, LALT__R, LSFT__S, LCTL__T, RALT__G, RALT__M, RCTL__N, RSFT__E, RALT__I, RGUI__O, CTL_ENT,
         SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, SC_RSPC,
-        KC_LCBR, HYPER_L, KC_LALT, KC_LGUI, LOWER,       KC_SPC,       RAISE,   KC_RGUI, KC_RALT, HYPER_R, KC_RCBR
+        KC_LBRC, KC_LCBR, KC_LALT, KC_LGUI, LOWER,       KC_SPC,       RAISE,   KC_RGUI, KC_RALT, KC_RCBR, KC_RBRC
         ),
 
     /* Number layer

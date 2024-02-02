@@ -22,8 +22,8 @@
 #define CTL_TAB CTL_T(KC_TAB)
 #define CTL_ENT CTL_T(KC_ENT)
 
-#define HYPER_L ALL_T(KC_LBRC)
-#define HYPER_R ALL_T(KC_RBRC)
+#define HYPER_L ALL_T(KC_LCBR)
+#define HYPER_R ALL_T(KC_RCBR)
 
 // Homerow mods
 // Layer 1
