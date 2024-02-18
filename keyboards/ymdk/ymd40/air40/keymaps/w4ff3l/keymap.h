@@ -58,11 +58,5 @@
 #define LGUI__1 LGUI_T(KC_1)
 #define RGUI__0 LGUI_T(KC_0)
 
-// Options
-#define USB_SUSPEND_WAKEUP_DELAY 0
-#define IGNORE_MOD_TAP_INTERRUPT
-#define TAPPING_FORCE_HOLD
-#define RETRO_TAPPING
-
 #endif // QMK_FIRMWARE_KEYMAP_H
 
