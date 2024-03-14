@@ -22,3 +22,12 @@
 #define TAPPING_TERM 170
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define PERMISSIVE_HOLD
+
+#ifdef RGB_MATRIX_ENABLE
+#    define RGB_MATRIX_KEYPRESSES // reacts to keypresses
+#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 130 // Limit to vendor-recommended value
+#    define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
+// RGB Matrix Animation modes. Explicitly enabled
+// For full list of effects, see:
+#    define ENABLE_RGB_MATRIX_SOLID_COLOR
+#endif

@@ -19,6 +19,8 @@
 #define QMK_FIRMWARE_KEYMAP_H
 
 // Modifiers
+#define SP_SHF LSFT_T(KC_SPC)
+
 #define CTL_TAB CTL_T(KC_TAB)
 #define CTL_ENT CTL_T(KC_ENT)
 
