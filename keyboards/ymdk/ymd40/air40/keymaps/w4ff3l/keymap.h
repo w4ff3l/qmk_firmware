@@ -38,6 +38,9 @@
 #define LSFT__S LSFT_T(KC_S)
 #define RSFT__E RSFT_T(KC_E)
 
+#define LALT__S LALT_T(KC_S)
+#define RALT__E RALT_T(KC_E)
+
 #define LALT__R LALT_T(KC_R)
 #define RALT__I RALT_T(KC_I)
 
@@ -53,6 +56,9 @@
 
 #define LSFT__3 RSFT_T(KC_3)
 #define RSFT__8 RSFT_T(KC_8)
+
+#define LALT__3 LALT_T(KC_3)
+#define RALT__8 RALT_T(KC_8)
 
 #define LALT__2 LALT_T(KC_2)
 #define RALT__9 RALT_T(KC_9)

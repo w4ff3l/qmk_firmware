@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [_BASE_COLEMAK_DH] = LAYOUT_ortho_4x12_1x2uC(
         KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
-        CTL_TAB, LGUI__A, LALT__R, LSFT__S, LCTL__T, RALT__G, RALT__M, RCTL__N, RSFT__E, RALT__I, RGUI__O, CTL_ENT,
+        CTL_TAB, LGUI__A, KC_R,    LALT__S, LCTL__T, RALT__G, RALT__M, RCTL__N, RALT__E, KC_I,    RGUI__O, CTL_ENT,
         SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, SC_RSPC,
         KC_LBRC, KC_LCBR, KC_LALT, KC_LGUI, LOWER,       SP_SHF,       RAISE,   KC_RGUI, KC_RALT, KC_RCBR, KC_RBRC
         ),
@@ -69,10 +69,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                  └─────┴─────┴─────┴─────┴─────┴───────────┴─────┴─────┴─────┴─────┴─────┘
      */
     [_LOWER] = LAYOUT_ortho_4x12_1x2uC(
-        _______, KC_F1,   KC_F2,    KC_F3,  KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
-        _______, LGUI__1, LALT__2, LSFT__3, LCTL__4, RALT__5, RALT__6, RCTL__7, RSFT__8, RALT__9, RGUI__0, _______,
-        _______, KC_MINS, KC_EQUAL, KC_GRV, KC_BSLS, KC_COLN, _______, _______, KC_COMM, KC_DOT,  KC_SLSH, _______,
-        _______, _______, _______,  _______, _______,     KC_BSPC,     _______, _______, _______, _______, _______
+        _______, KC_F1,   KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
+        _______, LGUI__1, KC_2,     LALT__3, LCTL__4, RALT__5, RALT__6, RCTL__7, RALT__8, KC_9,    RGUI__0, _______,
+        _______, KC_MINS, KC_EQUAL, KC_GRV,  KC_BSLS, KC_COLN, _______, _______, KC_COMM, KC_DOT,  KC_SLSH, _______,
+        _______, _______, _______,  _______, _______,     KC_BSPC,      _______, _______, _______, _______, _______
         ),
 
     /* Symbol layer
